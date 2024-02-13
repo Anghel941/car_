@@ -38,8 +38,8 @@
    padding:10px;
 }
 .side.one {
-   width:350px;
-   transform:skew(10deg,20deg);
+   width:360px;
+   transform:skew(10deg,17deg);
    background:linear-gradient(90deg, #fff, #fff 40%, #ddd);
 }
 .side.two {
@@ -176,11 +176,10 @@ body {
  }
 
 
- 
  @media (min-width: 768px) {
     #card {
        width: 90%; 
-       margin-top: 100px;
+       margin-top: 200px;
        margin-left: -180px;
        padding-right: 250px;
     }
@@ -189,7 +188,6 @@ body {
        font-size: 1.5em; 
     }  
  }
-
 
 
   .heart-icon {
