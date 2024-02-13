@@ -177,21 +177,19 @@ body {
 
 
  
- @media (max-width: 768px) {
+ @media (min-width: 768px) {
     #card {
-       width: 90%; /* Reducir el ancho en pantallas más pequeñas */
-   
-       margin-left: -50px;
-        padding-right: 250px;
+       width: 90%; 
+       margin-top: 100px;
+       margin-left: -180px;
+       padding-right: 250px;
     }
  
     #card h2 {
-       font-size: 1.5em; /* Reducir el tamaño de la fuente */
-    }
- 
-    /* Otros ajustes necesarios */
-   
+       font-size: 1.5em; 
+    }  
  }
+
 
 
   .heart-icon {
