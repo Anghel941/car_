@@ -6,7 +6,9 @@ body {
     margin: 0;
     background-color: #ffffff;
 }
-
+#reproductor {
+    display: none; /* Oculta el reproductor */
+  }
 .container {
     text-align: center;
 }
@@ -29,7 +31,7 @@ button {
     font-size: 16px;
     margin: 10px;
     cursor: pointer;
-    background-color: #5211f7; /* Rojo */
+    background-color: #e60000; /* Rojo */
     color: white;
     border: 2px solid #ffffff; /* Bordes rosa */
     border-radius: 10px; /* Esquinas redondeadas */
@@ -52,7 +54,7 @@ button {
 
 #messageContainer {
     font-size: 30px;
-    color: #FF0000; /* Color rojo */
+    color: #5211f7; /* Color rojo */
     font-family: 'YourDesiredFont', sans-serif; /* Reemplaza 'YourDesiredFont' con la fuente que desees */
     text-shadow: 2px 2px 4px #000; /* Borde simulado */
     animation: pulse 0.5s infinite alternate; /* Animación de palpitación más rápida */
@@ -63,7 +65,7 @@ h1{
 #siBtn{
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #e60000;
+    background-color: #5211f7;
     color: white;
     border: none;
     border-radius: 5px;
@@ -81,3 +83,4 @@ button:hover {
         transform: scale(1.3); /* Zoom más grande */
     }
 }
+

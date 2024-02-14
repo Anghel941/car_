@@ -4,16 +4,22 @@
   <meta charset="UTF-8">
   <title>Carta de San Valentín</title>
   <link rel="stylesheet" href="./style.css">
+ 
 </head>
 <body>
 
-   
+
 
 <div class="valentines-day">
   <div class="envelope"></div>
-  <div class="heart"></div>
-  <div class="text">FELIZ <br>SAVALENTIN ESTE<br>DIA!</div>
-  <div class="front"></div>
+  <button id="repro"> 
+   
+    <div class="heart"></div>
+
+    <div class="text">¡FELIZ <br>SAN VALENTIN !<br>DAME CLIC !</div>
+    <div class="front"></div>
+  </button>
+  
 </div>
 
 <div id="card">
@@ -21,7 +27,7 @@
     <h2>2024/02/14</h2>
     <h3>MYCHELLE ESPINOZA VIDAL</h3>
     <p>Si estás aquí leyendo estas líneas, es porque has aceptado ser mi San Valentín. ¡Jaja! 🎉😊 
-        Imagino que ya has recibido el pequeño presente 🎁 que preparé con todo mi cariño, 
+        Imagino que ya has recibido el pequeño presente 🎁 que preparé para tí, 
         este será  el primero de muchos que deseo compartir contigo en el transcurso de nuestro viaje juntos.</p>
     <p>Confieso que hubiera deseado estar a tu lado hoy, compartiendo risas, historias y charlas interminables. </p>
     
@@ -37,9 +43,27 @@
     <div class="heart-icon">❤️</div>
   </div>
 </div>
-
+<div  id="reproductor">
+  <audio id="audioPlayer" controls>
+    <source src="musica.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</div>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src="./script.js"></script>
 
+<script>
+  const playButton = document.getElementById('repro');
+  const audioPlayer = document.getElementById('audioPlayer');
+  
+  
+  
+  playButton.addEventListener('click', () => {
+      audioPlayer.play();
+   
+  });
+  
+  
+</script>
 </body>
 </html>

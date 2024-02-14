@@ -43,10 +43,42 @@
 
         <button id="siBtn">Sí quiero ser tu San Valentín</button>
         <button id="noBtn">No</button>
+
+        <div  id="reproductor">
+            <audio id="audioPlayer" controls>
+              <source src="musica2.mp3" type="audio/mp3">
+              Tu navegador no soporta el elemento de audio.
+            </audio>
+          </div>
         <script src="js.js"></script>
     </div>
 
     <script src="js.js"></script>
+    <script>
+        const playButton = document.getElementById('noBtn');
+        const audioPlayer = document.getElementById('audioPlayer');
+        const siBtn = document.getElementById('siBtn');
+        const mensaje = document.getElementById('mensaje');
+        
+        // Verificar si hay un estado de reproducción guardado en la sesión del navegador
+        const audioPlaybackState = sessionStorage.getItem('audioPlaybackState');
+        if (audioPlaybackState === 'playing') {
+            audioPlayer.play();
+        }
+        
+        playButton.addEventListener('click', () => {
+            audioPlayer.play();
+            // Guardar el estado de reproducción en la sesión del navegador
+            sessionStorage.setItem('audioPlaybackState', 'playing');
+        });
+      
+        siBtn.addEventListener('click', () => {
+            // Redireccionar a otra página
+            setTimeout(() => {
+             window.location.href = 'carta.html';
+            }, 10000);
+        });
+    </script>
 </body>
 </html>
 

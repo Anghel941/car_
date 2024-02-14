@@ -23,13 +23,15 @@
     text-align: center;
  }
 #card p {
-   font-size: 1.2em;
+   font-size: 1.3em;
    text-align: justify;
    padding-left: 30px; /* Espacio en blanco a la izquierda */
    padding-right: 30px; /* Espacio en blanco a la derecha */
 }
 
-
+#reproductor {
+  display: none; /* Oculta el reproductor */
+}
 .side {
    background:#eee;
    height:550px;
